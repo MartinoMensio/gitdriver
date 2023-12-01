@@ -1,6 +1,6 @@
 ## Synopsis
 
-    gitdriver.py [-h] [--config CONFIG] [--text] [--html] docid
+    gitdriver [-h] [--config CONFIG] [--text] [--html] docid
 
 ## Options
 
@@ -11,7 +11,7 @@
 
 ## Example usage:
 
-    $ python gitdriver.py 1j6Ygv0_this_is_a_fake_document_id_a8Q66mvt4
+    $ python -m gitdriver 1j6Ygv0_this_is_a_fake_document_id_a8Q66mvt4
     Create repository "Untitled"
     Initialized empty Git repository in /home/lars/projects/gitdriver/Untitled/.git/
     [master (root-commit) 27baec9] revision from 2013-01-08T21:57:38.837Z
@@ -54,3 +54,10 @@ Where `YOUR_CLIENT_ID` and `YOUR_CLIENT_SECRET` are replaced with the
 appropriate values from Google that you established in the previous
 step.
 
+## Prerequisites
+
+Besides the Python Google API libraries (see the quickstart guide
+above), if you are using the `-M` option, you will also need the
+`pandoc` executable available and on CLI execution path.
+
+On Debian/Ubuntu, this is available by installing the `pandoc` package.
